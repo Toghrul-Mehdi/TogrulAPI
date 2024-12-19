@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
+using TogrulAPI.Services.Abstracts;
+using TogrulAPI.Services.Implements;
 
 namespace TogrulAPI
 {
@@ -14,6 +16,7 @@ namespace TogrulAPI
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<TogrulDB>(s => s.UseSqlServer(builder.Configuration.GetConnectionString("Mssql")));
+            builder.Services.AddScoped<ILanguageService, LanguageService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

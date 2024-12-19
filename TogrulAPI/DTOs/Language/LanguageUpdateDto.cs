@@ -1,6 +1,6 @@
-﻿namespace TogrulAPI.Entities
+﻿namespace TogrulAPI.DTOs.Language
 {
-    public class Language : BaseEntity
+    public class LanguageUpdateDto
     {
         public string Code { get; set; }
         public string LanguageName { get; set; }
