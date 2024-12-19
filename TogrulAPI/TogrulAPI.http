@@ -1,0 +1,6 @@
+@TogrulAPI_HostAddress = http://localhost:5173
+
+GET {{TogrulAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

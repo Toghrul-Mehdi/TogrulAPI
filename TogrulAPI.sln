@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogrulAPI", "TogrulAPI\TogrulAPI.csproj", "{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A87784DE-7804-48A4-8AB7-E598B84D226C}
+	EndGlobalSection
+EndGlobal

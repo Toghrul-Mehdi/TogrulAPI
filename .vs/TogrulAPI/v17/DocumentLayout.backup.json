@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\services\\abstraction\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\abstraction\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\dtos\\language\\languagecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\language\\languagecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\dtos\\language\\languagegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\language\\languagegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\dal\\togruldb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dal\\togruldb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\ii novbe\\source\\repos\\togrulapi\\togrulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ILanguageService.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Services\\Abstraction\\ILanguageService.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Services\\Abstraction\\ILanguageService.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Services\\Abstraction\\ILanguageService.cs",
+              "RelativeToolTip": "TogrulAPI\\Services\\Abstraction\\ILanguageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:32:38.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LanguageGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DTOs\\Language\\LanguageGetDto.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\Language\\LanguageGetDto.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DTOs\\Language\\LanguageGetDto.cs",
+              "RelativeToolTip": "TogrulAPI\\DTOs\\Language\\LanguageGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:30:49.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LanguageCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DTOs\\Language\\LanguageCreateDto.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\Language\\LanguageCreateDto.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DTOs\\Language\\LanguageCreateDto.cs",
+              "RelativeToolTip": "TogrulAPI\\DTOs\\Language\\LanguageCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:30:03.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241219142037_UpdatedLanguageTable.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs",
+              "RelativeToolTip": "TogrulAPI\\Migrations\\20241219142037_UpdatedLanguageTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:20:37.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241219141813_UpdatedLanguageTables.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs",
+              "RelativeToolTip": "TogrulAPI\\Migrations\\20241219141813_UpdatedLanguageTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:18:13.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Program.cs",
+              "RelativeToolTip": "TogrulAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:44:39.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TogrulDB.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DAL\\TogrulDB.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\DAL\\TogrulDB.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\DAL\\TogrulDB.cs",
+              "RelativeToolTip": "TogrulAPI\\DAL\\TogrulDB.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:42:11.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LanguagesController.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Controllers\\LanguagesController.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\LanguagesController.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Controllers\\LanguagesController.cs",
+              "RelativeToolTip": "TogrulAPI\\Controllers\\LanguagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:33:10.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Language.cs",
+              "DocumentMoniker": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Entities\\Language.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Entities\\Language.cs",
+              "ToolTip": "C:\\Users\\II novbe\\source\\repos\\TogrulAPI\\TogrulAPI\\Entities\\Language.cs",
+              "RelativeToolTip": "TogrulAPI\\Entities\\Language.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:30:48.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
