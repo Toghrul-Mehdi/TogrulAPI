@@ -28,14 +28,14 @@
   {
     "ContainingType": "TogrulAPI.Controllers.LanguagesController",
     "Method": "Update",
-    "RelativePath": "api/Languages/{id}",
+    "RelativePath": "api/Languages/{code}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Name": "code",
+        "Type": "System.String",
         "IsRequired": true
       },
       {
@@ -49,14 +49,14 @@
   {
     "ContainingType": "TogrulAPI.Controllers.LanguagesController",
     "Method": "Delete",
-    "RelativePath": "api/Languages/{id}",
+    "RelativePath": "api/Languages/{code}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Name": "code",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

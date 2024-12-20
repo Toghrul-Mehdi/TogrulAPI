@@ -30,12 +30,11 @@ namespace TogrulAPI.Services.Implements
             }).ToListAsync();
         }
 
-        public async Task UpdateAsync(int? id, LanguageUpdateDto dto)
+        public async Task UpdateAsync(string? code, LanguageUpdateDto dto)
         {
-            var data  = await _context.Languages.FirstOrDefaultAsync(x=>x.Id ==id);
+            var data  = await _context.Languages.FirstOrDefaultAsync(x=>x.Code == code);
             if (data != null)
             {
-                data.Code = dto.Code;
                 data.Icon = dto.Icon;
                 data.LanguageName = dto.LanguageName;
                 
@@ -44,9 +43,9 @@ namespace TogrulAPI.Services.Implements
             
         }
 
-        public async Task DeleteAsync(int? id)
+        public async Task DeleteAsync(string? code)
         {
-            var data = await _context.Languages.FirstOrDefaultAsync(x=>x.Id ==id);
+            var data = await _context.Languages.FirstOrDefaultAsync(x=>x.Code ==code);
             if(data != null)
             {
                 _context.Languages.Remove(data);   

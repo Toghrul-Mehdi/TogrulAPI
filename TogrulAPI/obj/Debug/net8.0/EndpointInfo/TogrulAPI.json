@@ -46,19 +46,18 @@
         }
       }
     },
-    "/api/Languages/{id}": {
+    "/api/Languages/{code}": {
       "put": {
         "tags": [
           "Languages"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "code",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -93,12 +92,11 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "code",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],

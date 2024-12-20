@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\abstracts\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\abstracts\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Language.cs",
+              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Entities\\Language.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Entities\\Language.cs",
+              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Entities\\Language.cs",
+              "RelativeToolTip": "TogrulAPI\\Entities\\Language.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T08:11:41.768Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\LanguagesController.cs",
               "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\LanguagesController.cs",
               "RelativeToolTip": "TogrulAPI\\Controllers\\LanguagesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T21:02:45.428Z",
               "EditorCaption": ""
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "TogrulAPI\\Services\\Implements\\LanguageService.cs",
               "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Implements\\LanguageService.cs",
               "RelativeToolTip": "TogrulAPI\\Services\\Implements\\LanguageService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAjwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T19:53:01.524Z",
               "EditorCaption": ""
@@ -58,7 +75,7 @@
               "RelativeDocumentMoniker": "TogrulAPI\\Services\\Abstracts\\ILanguageService.cs",
               "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Abstracts\\ILanguageService.cs",
               "RelativeToolTip": "TogrulAPI\\Services\\Abstracts\\ILanguageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T19:50:37.278Z",
               "EditorCaption": ""

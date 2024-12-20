@@ -7,7 +7,7 @@ namespace TogrulAPI.Services.Abstracts
     {
         Task CreateAsync(LanguageCreateDto dto);
         Task <IEnumerable<LanguageGetDto>> GetAllAsync();
-        Task UpdateAsync(int? id, LanguageUpdateDto dto);
-        Task DeleteAsync(int? id);
+        Task UpdateAsync(string? code, LanguageUpdateDto dto);
+        Task DeleteAsync(string? code);
     }
 }

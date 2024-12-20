@@ -21,18 +21,18 @@ namespace TogrulAPI.Controllers
             await _service.CreateAsync(dto);
             return Ok();    
         }
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int? id,LanguageUpdateDto dto)
+        [HttpPut("{code}")]
+        public async Task<IActionResult> Update(string? code,LanguageUpdateDto dto)
         {
-            await _service.UpdateAsync(id, dto);
+            await _service.UpdateAsync(code, dto);
             return Ok();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{code}")]
 
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string? code)
         {
-            await _service.DeleteAsync(id);
+            await _service.DeleteAsync(code);
             return Ok();
         }
     }
