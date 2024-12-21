@@ -2,6 +2,7 @@
 using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.DTOs.Word;
+using TogrulAPI.Entities;
 using TogrulAPI.Services.Word.Abstracts;
 
 namespace TogrulAPI.Services.Word.Implements
@@ -30,11 +31,14 @@ namespace TogrulAPI.Services.Word.Implements
 
         public async Task<IEnumerable<WordGetDto>> GetAllAsync()
         {
-            return await _context.Words.Select(x => new WordGetDto
-            {
-                LanguageCode = x.LanguageCode,
-                Text = x.Text,
-            }).ToListAsync();
+            return await _context.Words
+                .Include(x => x.BannedWords)
+                .Select(x => new WordGetDto
+                {
+                    LanguageCode = x.LanguageCode,
+                    Text = x.Text,
+                    BannedWords = x.BannedWords.Select(x => x.Text).ToList()
+                }).ToListAsync();  
         }
 
         public async Task<WordGetDto> GetByIdAsync(int id)

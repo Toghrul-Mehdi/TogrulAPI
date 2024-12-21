@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "TogrulAPI.Controllers.BannedWordController",
+    "Method": "Get",
+    "RelativePath": "api/BannedWord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.BannedWordController",
+    "Method": "Create",
+    "RelativePath": "api/BannedWord",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TogrulAPI.DTOs.BannedWord.BannedWordCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.BannedWordController",
+    "Method": "Search",
+    "RelativePath": "api/BannedWord/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.BannedWordController",
+    "Method": "Update",
+    "RelativePath": "api/BannedWord/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TogrulAPI.DTOs.BannedWord.BannedWordUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.BannedWordController",
+    "Method": "Delete",
+    "RelativePath": "api/BannedWord/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TogrulAPI.Controllers.LanguagesController",
     "Method": "Get",
     "RelativePath": "api/Languages",

@@ -20,12 +20,15 @@ namespace TogrulAPI.Services.Language.Implements
 
         public async Task<IEnumerable<LanguageGetDto>> GetAllAsync()
         {
-            return await _context.Languages.Select(x => new LanguageGetDto
-            {
-                Code = x.Code,
-                Icon = x.Icon,
-                LanguageName = x.LanguageName,
-            }).ToListAsync();
+            return await _context.Languages
+                .Include(x=>x.Words)
+                .Select(x => new LanguageGetDto
+                {
+                    Code = x.Code,
+                    Icon = x.Icon,
+                    LanguageName = x.LanguageName,
+                    Words = x.Words.Select(x=>x.Text).ToList()
+                }).ToListAsync();
         }
 
         public async Task<LanguageGetDto> GetByIdAsync(string? code)

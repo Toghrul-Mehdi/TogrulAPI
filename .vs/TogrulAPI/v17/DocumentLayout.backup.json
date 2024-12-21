@@ -3,60 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\controllers\\wordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\controllers\\wordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\controllers\\bannedwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\controllers\\bannedwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\word\\implements\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\word\\implements\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\bannedword\\implements\\bannedwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\bannedword\\implements\\bannedwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\word\\abstracts\\iwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\word\\abstracts\\iwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\entities\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\entities\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\word\\wordupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\word\\wordupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\word\\wordgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\word\\wordgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\word\\wordcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\word\\wordcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dal\\togruldb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dal\\togruldb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\bannedword\\bannedwordupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\bannedword\\bannedwordupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\bannedword\\bannedwordgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\bannedword\\bannedwordgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\dtos\\bannedword\\bannedwordcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\dtos\\bannedword\\bannedwordcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\migrations\\20241221200130_updated2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\migrations\\20241221200130_updated2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\bannedword\\abstracts\\ibannedwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\bannedword\\abstracts\\ibannedwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,178 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20241221200130_Updated2.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Migrations\\20241221200130_Updated2.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Migrations\\20241221200130_Updated2.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Migrations\\20241221200130_Updated2.cs",
-              "RelativeToolTip": "TogrulAPI\\Migrations\\20241221200130_Updated2.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T20:01:31.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TogrulDB.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DAL\\TogrulDB.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DAL\\TogrulDB.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DAL\\TogrulDB.cs",
-              "RelativeToolTip": "TogrulAPI\\DAL\\TogrulDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:59:04.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Word.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Entities\\Word.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Entities\\Word.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Entities\\Word.cs",
-              "RelativeToolTip": "TogrulAPI\\Entities\\Word.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:58:43.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Program.cs",
-              "RelativeToolTip": "TogrulAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:56:30.174Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WordsController.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\WordsController.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\WordsController.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\WordsController.cs",
-              "RelativeToolTip": "TogrulAPI\\Controllers\\WordsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Title": "BannedWordController.cs",
+              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\BannedWordController.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\BannedWordController.cs",
+              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\BannedWordController.cs*",
+              "RelativeToolTip": "TogrulAPI\\Controllers\\BannedWordController.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA5wDgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:55:23.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LanguageService.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
-              "RelativeToolTip": "TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:46:05.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BannedWordUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordUpdateDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\BannedWord\\BannedWordUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordUpdateDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\BannedWord\\BannedWordUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:39:15.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BannedWordGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordGetDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\BannedWord\\BannedWordGetDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordGetDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\BannedWord\\BannedWordGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:39:15.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BannedWordCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordCreateDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\BannedWord\\BannedWordCreateDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\BannedWord\\BannedWordCreateDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\BannedWord\\BannedWordCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:39:15.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WordUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordUpdateDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\Word\\WordUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordUpdateDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\Word\\WordUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:38:26.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WordGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordGetDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\Word\\WordGetDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordGetDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\Word\\WordGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:38:25.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WordCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordCreateDto.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\DTOs\\Word\\WordCreateDto.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\DTOs\\Word\\WordCreateDto.cs",
-              "RelativeToolTip": "TogrulAPI\\DTOs\\Word\\WordCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:38:25.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WordService.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Word\\Implements\\WordService.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Services\\Word\\Implements\\WordService.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Word\\Implements\\WordService.cs*",
-              "RelativeToolTip": "TogrulAPI\\Services\\Word\\Implements\\WordService.cs*",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAMwC4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:15:53.526Z",
+              "WhenOpened": "2024-12-21T23:15:34.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IWordService.cs",
-              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Word\\Abstracts\\IWordService.cs",
-              "RelativeDocumentMoniker": "TogrulAPI\\Services\\Word\\Abstracts\\IWordService.cs",
-              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Word\\Abstracts\\IWordService.cs*",
-              "RelativeToolTip": "TogrulAPI\\Services\\Word\\Abstracts\\IWordService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Title": "IBannedWordService.cs",
+              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\BannedWord\\Abstracts\\IBannedWordService.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Services\\BannedWord\\Abstracts\\IBannedWordService.cs",
+              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\BannedWord\\Abstracts\\IBannedWordService.cs*",
+              "RelativeToolTip": "TogrulAPI\\Services\\BannedWord\\Abstracts\\IBannedWordService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T19:15:18.388Z",
+              "WhenOpened": "2024-12-21T23:14:13.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BannedWordService.cs",
+              "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs",
+              "RelativeDocumentMoniker": "TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs",
+              "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs*",
+              "RelativeToolTip": "TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T23:12:28.184Z",
               "EditorCaption": ""
             }
           ]
