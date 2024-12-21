@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TogrulAPI.DAL;
 
@@ -10,9 +11,11 @@ using TogrulAPI.DAL;
 namespace TogrulAPI.Migrations
 {
     [DbContext(typeof(TogrulDB))]
-    partial class TogrulDBModelSnapshot : ModelSnapshot
+    [Migration("20241221152819_updated_table")]
+    partial class updated_table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,7 +79,7 @@ namespace TogrulAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("LanguageCode")
+                    b.Property<string>("LanguageId")
                         .IsRequired()
                         .HasColumnType("nchar(2)");
 
@@ -87,7 +90,7 @@ namespace TogrulAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LanguageCode");
+                    b.HasIndex("LanguageId");
 
                     b.ToTable("Words");
                 });
@@ -107,7 +110,7 @@ namespace TogrulAPI.Migrations
                 {
                     b.HasOne("TogrulAPI.Entities.Language", "Language")
                         .WithMany("Words")
-                        .HasForeignKey("LanguageCode")
+                        .HasForeignKey("LanguageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

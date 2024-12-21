@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TogrulAPI.DTOs.Language;
-using TogrulAPI.Services.Abstracts;
+using TogrulAPI.Services.Language.Abstracts;
 
 namespace TogrulAPI.Controllers
 {
@@ -21,11 +21,44 @@ namespace TogrulAPI.Controllers
             await _service.CreateAsync(dto);
             return Ok();    
         }
+
+        [HttpGet("{code}")]
+
+        public async Task<IActionResult> Search(string? code)
+        {
+            var language = await _service.GetByIdAsync(code);
+
+            if(language == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(language);
+        }
+
         [HttpPut("{code}")]
         public async Task<IActionResult> Update(string? code,LanguageUpdateDto dto)
         {
-            await _service.UpdateAsync(code, dto);
-            return Ok();
+            var language = await _service.GetByIdAsync(code);
+
+            if (language == null)
+            {
+                return NotFound();  
+            }
+
+            language.Icon = dto.Icon;
+            language.LanguageName = dto.LanguageName;
+
+            var updateSuccess = await _service.UpdateAsync(code, dto);
+
+            if (updateSuccess)
+            {
+                return Ok(language); 
+            }
+            else
+            {
+                return BadRequest("Update ugurlu oldu!"); 
+            }
         }
 
         [HttpDelete("{code}")]
