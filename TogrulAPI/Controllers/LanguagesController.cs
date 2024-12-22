@@ -1,13 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TogrulAPI.DTOs.Language;
+using TogrulAPI.Entities;
 using TogrulAPI.Services.Language.Abstracts;
 
 namespace TogrulAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LanguagesController(ILanguageService _service) : ControllerBase
+    public class LanguagesController(ILanguageService _service,IMapper _mapper) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> Get()

@@ -21,6 +21,7 @@ namespace TogrulAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddDbContext<TogrulDB>(s => s.UseSqlServer(builder.Configuration.GetConnectionString("Mssql")));
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<Program>();

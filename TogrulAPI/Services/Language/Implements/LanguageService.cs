@@ -1,20 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
+using TogrulAPI.Entities;
 using TogrulAPI.Services.Language.Abstracts;
 
 namespace TogrulAPI.Services.Language.Implements
 {
-    public class LanguageService(TogrulDB _context) : ILanguageService
+    public class LanguageService(TogrulDB _context,IMapper _mapper) : ILanguageService
     {
         public async Task CreateAsync(LanguageCreateDto dto)
         {
-            await _context.AddAsync(new Entities.Language
-            {
-                Code = dto.Code,
-                Icon = dto.Icon,
-                LanguageName = dto.LanguageName,
-            });
+            var language = _mapper.Map<Entities.Language>(dto);
+            await _context.Languages.AddAsync(language);
             await _context.SaveChangesAsync();
         }
 
