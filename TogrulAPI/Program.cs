@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
 using TogrulAPI.Services.BannedWord.Abstracts;
@@ -6,6 +8,7 @@ using TogrulAPI.Services.Language.Abstracts;
 using TogrulAPI.Services.Language.Implements;
 using TogrulAPI.Services.Word.Abstracts;
 using TogrulAPI.Services.Word.Implements;
+
 
 namespace TogrulAPI
 {
@@ -19,6 +22,8 @@ namespace TogrulAPI
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<TogrulDB>(s => s.UseSqlServer(builder.Configuration.GetConnectionString("Mssql")));
+            builder.Services.AddFluentValidationAutoValidation();
+            builder.Services.AddValidatorsFromAssemblyContaining<Program>();
             builder.Services.AddScoped<ILanguageService, LanguageService>();
             builder.Services.AddScoped<IWordService, WordService>();
             builder.Services.AddScoped<IBannedWordService, BannedWordService>();

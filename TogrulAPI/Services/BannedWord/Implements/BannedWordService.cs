@@ -10,10 +10,13 @@ namespace TogrulAPI.Services.BannedWord.Implements
     {
         public async Task<IEnumerable<BannedWordGetDto>> GetAllAsync()
         {
-            return await _context.BannedWords.Select(x => new BannedWordGetDto
+            return await _context.BannedWords
+                .Include(x=>x.Word)
+                .Select(x => new BannedWordGetDto
             {
                 Text = x.Text,
                 WordId = x.WordId,
+                Word = x.Word.Text,
             }).ToListAsync();
         }
 
