@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.DTOs.Word;
+using TogrulAPI.Exceptions;
 using TogrulAPI.Services.Word.Abstracts;
 
 namespace TogrulAPI.Controllers
@@ -19,8 +20,25 @@ namespace TogrulAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(WordCreateDto dto)
         {
-            await _service.CreateAsync(dto);
-            return Ok();
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                if (ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
         }
 
 

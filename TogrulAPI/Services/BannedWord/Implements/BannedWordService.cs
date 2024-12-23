@@ -2,6 +2,7 @@
 using TogrulAPI.DAL;
 using TogrulAPI.DTOs.BannedWord;
 using TogrulAPI.DTOs.Language;
+using TogrulAPI.Exceptions.BannedWords;
 using TogrulAPI.Services.BannedWord.Abstracts;
 
 namespace TogrulAPI.Services.BannedWord.Implements
@@ -22,6 +23,10 @@ namespace TogrulAPI.Services.BannedWord.Implements
 
         public async Task CreateAsync(BannedWordCreateDto dto)
         {
+            if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text))
+            {
+                throw new BannedWordExistException();
+            }
             await _context.AddAsync(new Entities.BannedWord
             {
                 Text = dto.Text,

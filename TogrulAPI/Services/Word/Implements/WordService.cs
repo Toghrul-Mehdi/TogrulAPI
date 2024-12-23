@@ -4,6 +4,7 @@ using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.DTOs.Word;
 using TogrulAPI.Entities;
+using TogrulAPI.Exceptions.Words;
 using TogrulAPI.Services.Word.Abstracts;
 
 namespace TogrulAPI.Services.Word.Implements
@@ -12,6 +13,10 @@ namespace TogrulAPI.Services.Word.Implements
     {
         public async Task CreateAsync(WordCreateDto dto)
         {
+            if(await _context.Words.AnyAsync(x=>x.Text == dto.Text))
+            {
+                throw new WordExistException();
+            }
             await _context.AddAsync(new Entities.Word
             {
                 Text = dto.Text,

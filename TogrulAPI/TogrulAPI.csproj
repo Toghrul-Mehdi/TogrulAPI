@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Exceptions\BannedWords\" />
-    <Folder Include="Exceptions\Words\" />
     <Folder Include="Profiles\BannedWord\" />
   </ItemGroup>
 
