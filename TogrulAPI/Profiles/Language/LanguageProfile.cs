@@ -7,7 +7,9 @@ namespace TogrulAPI.Profiles.Language
     {
         public LanguageProfile()
         {
-            CreateMap<LanguageCreateDto,Entities.Language>();
+           /* CreateMap<LanguageCreateDto,Entities.Language>();
+            CreateMap<LanguageUpdateDto,Entities.Language>();
+            CreateMap<Entities.Language, LanguageGetDto>();*/
         }
     }
 }

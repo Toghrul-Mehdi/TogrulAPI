@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.DTOs.Word;
@@ -7,7 +8,7 @@ using TogrulAPI.Services.Word.Abstracts;
 
 namespace TogrulAPI.Services.Word.Implements
 {
-    public class WordService(TogrulDB _context) : IWordService
+    public class WordService(TogrulDB _context,IMapper _mapper) : IWordService
     {
         public async Task CreateAsync(WordCreateDto dto)
         {
@@ -32,13 +33,13 @@ namespace TogrulAPI.Services.Word.Implements
         public async Task<IEnumerable<WordGetDto>> GetAllAsync()
         {
             return await _context.Words
-                .Include(x => x.BannedWords)
-                .Select(x => new WordGetDto
-                {
-                    LanguageCode = x.LanguageCode,
-                    Text = x.Text,
-                    BannedWords = x.BannedWords.Select(x => x.Text).ToList()
-                }).ToListAsync();  
+               .Include(x => x.BannedWords)
+               .Select(x => new WordGetDto
+               {
+                   LanguageCode = x.LanguageCode,
+                   Text = x.Text,
+                   BannedWords = x.BannedWords.Select(x => x.Text).ToList()
+               }).ToListAsync();
         }
 
         public async Task<WordGetDto> GetByIdAsync(int id)

@@ -20,8 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Exceptions\BannedWords\" />
+    <Folder Include="Exceptions\Words\" />
     <Folder Include="Profiles\BannedWord\" />
-    <Folder Include="Profiles\Word\" />
   </ItemGroup>
 
 </Project>

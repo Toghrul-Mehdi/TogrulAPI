@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.Entities;
+using TogrulAPI.Exceptions.Languages;
 using TogrulAPI.Services.Language.Abstracts;
 
 namespace TogrulAPI.Services.Language.Implements
@@ -11,21 +12,28 @@ namespace TogrulAPI.Services.Language.Implements
     {
         public async Task CreateAsync(LanguageCreateDto dto)
         {
-            var language = _mapper.Map<Entities.Language>(dto);
-            await _context.Languages.AddAsync(language);
+            if(await _context.Languages.AnyAsync(x=>x.Code == dto.Code))
+            {
+                throw new LanguageExistException();
+            }
+            await _context.AddAsync(new Entities.Language
+            {
+                LanguageName = dto.LanguageName,
+                Icon=dto.Icon,      
+            });
             await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<LanguageGetDto>> GetAllAsync()
         {
             return await _context.Languages
-                .Include(x=>x.Words)
+                .Include(x => x.Words)
                 .Select(x => new LanguageGetDto
                 {
                     Code = x.Code,
                     Icon = x.Icon,
                     LanguageName = x.LanguageName,
-                    Words = x.Words.Select(x=>x.Text).ToList()
+                    Words = x.Words.Select(x => x.Text).ToList()
                 }).ToListAsync();
         }
 

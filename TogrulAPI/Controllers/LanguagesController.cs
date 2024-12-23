@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.Entities;
+using TogrulAPI.Exceptions;
 using TogrulAPI.Services.Language.Abstracts;
 
 namespace TogrulAPI.Controllers
@@ -20,8 +21,25 @@ namespace TogrulAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(LanguageCreateDto dto)
         {
-            await _service.CreateAsync(dto);
-            return Ok();    
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(ex.Message);
+                }
+            }    
         }
 
         [HttpGet("{code}")]
