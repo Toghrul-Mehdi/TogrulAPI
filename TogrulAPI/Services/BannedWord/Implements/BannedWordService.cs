@@ -23,7 +23,7 @@ namespace TogrulAPI.Services.BannedWord.Implements
 
         public async Task CreateAsync(BannedWordCreateDto dto)
         {
-            if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text))
+            if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text && x.WordId==dto.WordId))
             {
                 throw new BannedWordExistException();
             }

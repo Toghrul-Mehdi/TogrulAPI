@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TogrulAPI.DTOs.BannedWord;
+using TogrulAPI.Exceptions;
 using TogrulAPI.Services.BannedWord.Abstracts;
 
 namespace TogrulAPI.Controllers
@@ -18,8 +19,26 @@ namespace TogrulAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(BannedWordCreateDto dto)
         {
-            await _service.CreateAsync(dto);
-            return Ok(dto);
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok(dto);
+            }
+            catch (Exception ex)
+            {
+
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
         }
 
         [HttpGet("{id}")]
