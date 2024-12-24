@@ -18,6 +18,7 @@ namespace TogrulAPI.Services.Language.Implements
             }
             await _context.AddAsync(new Entities.Language
             {
+                Code = dto.Code,
                 LanguageName = dto.LanguageName,
                 Icon=dto.Icon,      
             });
@@ -39,7 +40,9 @@ namespace TogrulAPI.Services.Language.Implements
 
         public async Task<LanguageGetDto> GetByIdAsync(string? code)
         {
-            var data = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
+            var data = await _context.Languages
+                .Include(x => x.Words)
+                .FirstOrDefaultAsync(x => x.Code == code);
             if (data == null)
                 throw new LanguageNotFoundException();
 
@@ -48,6 +51,7 @@ namespace TogrulAPI.Services.Language.Implements
                 Code = data.Code,
                 Icon = data.Icon,
                 LanguageName = data.LanguageName,
+                Words = data.Words.Select(x=>x.Text).ToList() 
             };
             return dto;
         }

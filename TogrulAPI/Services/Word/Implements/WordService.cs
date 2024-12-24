@@ -17,11 +17,15 @@ namespace TogrulAPI.Services.Word.Implements
             if(await _context.Words.AnyAsync(x=>x.Text == dto.Text))
             {
                 throw new WordExistException();
+            }    
+            if(await _context.Words.AnyAsync(x => x.LanguageCode != dto.LanguageCode))
+            {
+                throw new WordNotExistLanguage();
             }
             await _context.AddAsync(new Entities.Word
             {
                 Text = dto.Text,
-                LanguageCode = dto.LanguageCode,
+                LanguageCode = dto.LanguageCode
             });
             await _context.SaveChangesAsync();
         }
@@ -50,7 +54,9 @@ namespace TogrulAPI.Services.Word.Implements
 
         public async Task<WordGetDto> GetByIdAsync(int id)
         {
-            var data = await _context.Words.FirstOrDefaultAsync(x=>x.Id == id);
+            var data = await _context.Words
+                .Include (x => x.BannedWords)
+                .FirstOrDefaultAsync(x=>x.Id == id);
             if (data == null)
                 throw new WordNotFoundException();
 
@@ -58,6 +64,7 @@ namespace TogrulAPI.Services.Word.Implements
             {
                 Text = data.Text,
                 LanguageCode = data.LanguageCode,
+                BannedWords = data.BannedWords.Select(x=>x.Text).ToList()
             };
             return dto;
         }

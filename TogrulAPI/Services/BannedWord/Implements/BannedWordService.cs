@@ -17,15 +17,19 @@ namespace TogrulAPI.Services.BannedWord.Implements
             {
                 Text = x.Text,
                 WordId = x.WordId,
-                Word = x.Word.Text,
+                Word = x.Word.Text
             }).ToListAsync();
         }
 
         public async Task CreateAsync(BannedWordCreateDto dto)
         {
-            if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text && x.WordId==dto.WordId))
+            if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text))
             {
                 throw new BannedWordExistException();
+            }
+            if (await _context.BannedWords.AnyAsync(x => x.WordId != dto.WordId))
+            {
+                throw new BannedWordNotExistWord();
             }
             await _context.AddAsync(new Entities.BannedWord
             {
@@ -36,7 +40,9 @@ namespace TogrulAPI.Services.BannedWord.Implements
         }
         public async Task<BannedWordGetDto> GetByIdAsync(int id)
         {
-            var data = await _context.BannedWords.FirstOrDefaultAsync(x => x.Id==id);
+            var data = await _context.BannedWords
+                .Include (x=>x.Word)
+                .FirstOrDefaultAsync(x => x.Id==id);
             if (data == null)
             {
                 throw new BannedWordNotFoundException();
@@ -45,6 +51,7 @@ namespace TogrulAPI.Services.BannedWord.Implements
             {
                    Text= data.Text,
                    WordId = data.WordId,
+                   Word = data.Word.Text
             };
             return dto;
         }
