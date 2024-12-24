@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TogrulAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd26a4c1b70bf6ab8721712fe82df0f264cc1b01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9514b221177889f9f6562a2fea0cb5965e46389d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TogrulAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TogrulAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -44,7 +44,24 @@ namespace TogrulAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Search(int id)
         {
-            return Ok(await _service.GetByIdAsync(id));
+            try
+            {
+                return Ok(await _service.GetByIdAsync(id));
+            }
+            catch (Exception ex)
+            {
+                if (ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
         }
 
         [HttpPut("{id}")]

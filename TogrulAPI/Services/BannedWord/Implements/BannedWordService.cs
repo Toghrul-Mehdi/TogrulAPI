@@ -39,7 +39,7 @@ namespace TogrulAPI.Services.BannedWord.Implements
             var data = await _context.BannedWords.FirstOrDefaultAsync(x => x.Id==id);
             if (data == null)
             {
-                return null;
+                throw new BannedWordNotFoundException();
             }
             var dto = new BannedWordGetDto
             {

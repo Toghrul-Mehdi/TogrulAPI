@@ -45,26 +45,34 @@ namespace TogrulAPI.Controllers
         [HttpGet("{code}")]
 
         public async Task<IActionResult> Search(string? code)
-        {
-            var language = await _service.GetByIdAsync(code);
-
-            if(language == null)
+        {           
+            try
             {
-                return NotFound();
-            }
+                var language = await _service.GetByIdAsync(code);
 
-            return Ok(language);
+                return Ok(language);
+            }
+            catch (Exception ex)
+            {
+                if (ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
         }
+        
 
         [HttpPut("{code}")]
         public async Task<IActionResult> Update(string? code,LanguageUpdateDto dto)
         {
-            var language = await _service.GetByIdAsync(code);
-
-            if (language == null)
-            {
-                return NotFound();  
-            }
+            var language = await _service.GetByIdAsync(code);           
 
             language.Icon = dto.Icon;
             language.LanguageName = dto.LanguageName;

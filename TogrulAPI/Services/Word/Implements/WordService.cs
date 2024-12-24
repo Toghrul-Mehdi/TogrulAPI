@@ -4,6 +4,7 @@ using TogrulAPI.DAL;
 using TogrulAPI.DTOs.Language;
 using TogrulAPI.DTOs.Word;
 using TogrulAPI.Entities;
+using TogrulAPI.Exceptions.Languages;
 using TogrulAPI.Exceptions.Words;
 using TogrulAPI.Services.Word.Abstracts;
 
@@ -49,11 +50,10 @@ namespace TogrulAPI.Services.Word.Implements
 
         public async Task<WordGetDto> GetByIdAsync(int id)
         {
-            var data = await _context.Words.FirstOrDefaultAsync(x=>x.Id == id);    
+            var data = await _context.Words.FirstOrDefaultAsync(x=>x.Id == id);
             if (data == null)
-            {
-                return null;
-            }
+                throw new WordNotFoundException();
+
             var dto = new WordGetDto
             {
                 Text = data.Text,

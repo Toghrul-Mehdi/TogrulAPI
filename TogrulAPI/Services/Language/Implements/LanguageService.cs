@@ -39,11 +39,10 @@ namespace TogrulAPI.Services.Language.Implements
 
         public async Task<LanguageGetDto> GetByIdAsync(string? code)
         {
-            var data  = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
-            if(data == null)
-            {
-                return null;
-            }
+            var data = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
+            if (data == null)
+                throw new LanguageNotFoundException();
+
             var dto = new LanguageGetDto
             {
                 Code = data.Code,
