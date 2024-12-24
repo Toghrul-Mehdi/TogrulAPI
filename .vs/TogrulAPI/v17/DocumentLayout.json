@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\exceptions\\bannedwords\\bannedwordnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\exceptions\\bannedwords\\bannedwordnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\exceptions\\words\\wordnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\services\\language\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|c:\\users\\victus\\onedrive\\\u0130\u015F masas\u0131\\togrulapi\\togrulapi\\exceptions\\languages\\languagenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777A90C4-F0E7-46E4-BF9B-5919DF0AD5D7}|TogrulAPI\\TogrulAPI.csproj|solutionrelative:togrulapi\\exceptions\\languages\\languagenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BannedWordController.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\BannedWordController.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\BannedWordController.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "TogrulAPI\\Controllers\\BannedWordController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAqwDMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:41:38.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:41:38.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BannedWordService.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs",
@@ -71,12 +70,11 @@
               "RelativeToolTip": "TogrulAPI\\Services\\BannedWord\\Implements\\BannedWordService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:41:06.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:41:06.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BannedWordNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Exceptions\\BannedWords\\BannedWordNotFoundException.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Exceptions\\BannedWords\\BannedWordNotFoundException.cs",
@@ -84,12 +82,11 @@
               "RelativeToolTip": "TogrulAPI\\Exceptions\\BannedWords\\BannedWordNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:40:22.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:40:22.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WordsController.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\WordsController.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\WordsController.cs",
@@ -97,12 +94,11 @@
               "RelativeToolTip": "TogrulAPI\\Controllers\\WordsController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwEAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:38:34.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:38:34.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "WordNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Exceptions\\Words\\WordNotFoundException.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Exceptions\\Words\\WordNotFoundException.cs",
@@ -110,12 +106,11 @@
               "RelativeToolTip": "TogrulAPI\\Exceptions\\Words\\WordNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:36:18.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:36:18.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "WordService.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Word\\Implements\\WordService.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Services\\Word\\Implements\\WordService.cs",
@@ -123,34 +118,32 @@
               "RelativeToolTip": "TogrulAPI\\Services\\Word\\Implements\\WordService.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:32:50.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:32:50.303Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "LanguagesController.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\LanguagesController.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Controllers\\LanguagesController.cs",
               "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Controllers\\LanguagesController.cs",
               "RelativeToolTip": "TogrulAPI\\Controllers\\LanguagesController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAUwDgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwDYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T06:29:36.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "LanguageService.cs",
               "DocumentMoniker": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
               "RelativeDocumentMoniker": "TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
               "ToolTip": "C:\\Users\\Victus\\OneDrive\\\u0130\u015F masas\u0131\\TogrulAPI\\TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
               "RelativeToolTip": "TogrulAPI\\Services\\Language\\Implements\\LanguageService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T06:26:38.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T06:26:38.344Z"
             },
             {
               "$type": "Document",
