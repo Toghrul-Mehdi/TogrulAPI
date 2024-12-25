@@ -17,8 +17,8 @@ namespace TogrulAPI.Services.Word.Implements
             if(await _context.Words.AnyAsync(x=>x.Text == dto.Text))
             {
                 throw new WordExistException();
-            }    
-            if(await _context.Words.AnyAsync(x => x.LanguageCode != dto.LanguageCode))
+            }
+            if (!await _context.Words.AnyAsync(x =>x.LanguageCode == dto.LanguageCode))
             {
                 throw new WordNotExistLanguage();
             }

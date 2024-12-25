@@ -27,7 +27,7 @@ namespace TogrulAPI.Services.BannedWord.Implements
             {
                 throw new BannedWordExistException();
             }
-            if (await _context.BannedWords.AnyAsync(x => x.WordId != dto.WordId))
+            if (!await _context.BannedWords.AnyAsync(x => x.WordId == dto.WordId))
             {
                 throw new BannedWordNotExistWord();
             }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TogrulAPI.DAL;
 
@@ -11,9 +12,11 @@ using TogrulAPI.DAL;
 namespace TogrulAPI.Migrations
 {
     [DbContext(typeof(TogrulDB))]
-    partial class TogrulDBModelSnapshot : ModelSnapshot
+    [Migration("20241224225644_CreatedGameTable")]
+    partial class CreatedGameTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

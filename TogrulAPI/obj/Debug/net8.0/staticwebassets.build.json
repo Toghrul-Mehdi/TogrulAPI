@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "m6oNvrvvplqU+gg2ikq69N2XwSrWF85rnL/5dLOHAyI=",
+  "Hash": "1bOwRCIV/iDy1GHpW5gXE4Xf8DZ/hP1k6KeqKF1o+gk=",
   "Source": "TogrulAPI",
   "BasePath": "_content/TogrulAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

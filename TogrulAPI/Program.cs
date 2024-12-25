@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using TogrulAPI.DAL;
 using TogrulAPI.Services.BannedWord.Abstracts;
 using TogrulAPI.Services.BannedWord.Implements;
+using TogrulAPI.Services.Game.Abstracts;
+using TogrulAPI.Services.Game.Implements;
 using TogrulAPI.Services.Language.Abstracts;
 using TogrulAPI.Services.Language.Implements;
 using TogrulAPI.Services.Word.Abstracts;
@@ -28,6 +30,8 @@ namespace TogrulAPI
             builder.Services.AddScoped<ILanguageService, LanguageService>();
             builder.Services.AddScoped<IWordService, WordService>();
             builder.Services.AddScoped<IBannedWordService, BannedWordService>();
+            builder.Services.AddScoped<IGameService, GameService>();
+            builder.Services.AddMemoryCache();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

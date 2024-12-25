@@ -130,6 +130,60 @@
         }
       }
     },
+    "/api/Games": {
+      "post": {
+        "tags": [
+          "Games"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GameCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GameCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GameCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Games/Start/{id}": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Languages": {
       "get": {
         "tags": [
@@ -404,6 +458,32 @@
           "wordId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GameCreateDto": {
+        "type": "object",
+        "properties": {
+          "bannedWordCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "failCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skipCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "time": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "languageCode": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
