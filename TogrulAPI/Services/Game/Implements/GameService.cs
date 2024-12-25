@@ -19,14 +19,28 @@ namespace TogrulAPI.Services.Game.Implements
             return game.Id;
         }
 
-        public Task End(Guid id)
+        public async Task<GameStatusDto> End(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            _cache.Remove(id);
+            return new GameStatusDto
+            {
+                Success = status.Success,
+                Fail = status.Fail,
+                Skip = status.Skip,
+                Score = status.Score                
+            };
         }
 
-        public Task Fail(Guid id)
+        public async Task<WordForGameDto> Fail(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            var currentWord = status.Words.Pop();
+            status.Fail++;
+            status.Score -= 10;
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+            Console.WriteLine("Fail:"+status.Fail);
+            return currentWord;
         }
 
         public async Task<WordForGameDto> Skip(Guid id)
@@ -66,15 +80,21 @@ namespace TogrulAPI.Services.Game.Implements
                 Success = 0,
                 MaxSkipCount = game.SkipCount,
                 Words = wordsStack,
-                UsedWordIds = words.Select(x=>x.Id)
+                UsedWordIds = words.Select(x=>x.Id) 
             };
-            _cache.Set(id, status,TimeSpan.FromSeconds(300));
+            _cache.Set(id, status,TimeSpan.FromSeconds(game.Time));
             return currentWord;
         }
 
-        public Task Success(Guid id)
+        public async Task<WordForGameDto> Success(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            var currentWord = status.Words.Pop();
+            status.Success++;
+            status.Score += 20;
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+            Console.WriteLine("Success:"+status.Success);
+            return currentWord;
         }
         GameStatusDto _getCurrentGame(Guid id)
         {

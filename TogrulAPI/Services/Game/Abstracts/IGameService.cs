@@ -7,9 +7,9 @@ namespace TogrulAPI.Services.Game.Abstracts
     {
         Task<Guid> CreateAsync(GameCreateDto dto);
         Task<WordForGameDto> Start(Guid id);
-        Task Fail (Guid id);
-        Task Success(Guid id);
+        Task<WordForGameDto> Fail (Guid id);
+        Task<WordForGameDto> Success(Guid id);
         Task<WordForGameDto> Skip (Guid id);
-        Task End(Guid id);
+        Task<GameStatusDto> End(Guid id);
     }
 }

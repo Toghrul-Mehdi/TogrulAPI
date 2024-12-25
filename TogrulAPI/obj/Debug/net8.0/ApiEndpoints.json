@@ -59,6 +59,38 @@
   },
   {
     "ContainingType": "TogrulAPI.Controllers.GamesController",
+    "Method": "End",
+    "RelativePath": "api/Games/End",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.GamesController",
+    "Method": "Fail",
+    "RelativePath": "api/Games/Fail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.GamesController",
     "Method": "Skip",
     "RelativePath": "api/Games/Skip",
     "HttpMethod": "POST",
@@ -77,6 +109,22 @@
     "ContainingType": "TogrulAPI.Controllers.GamesController",
     "Method": "Start",
     "RelativePath": "api/Games/Start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.GamesController",
+    "Method": "Success",
+    "RelativePath": "api/Games/Success",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
