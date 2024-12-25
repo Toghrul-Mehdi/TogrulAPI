@@ -59,16 +59,32 @@
   },
   {
     "ContainingType": "TogrulAPI.Controllers.GamesController",
-    "Method": "Start",
-    "RelativePath": "api/Games/Start/{id}",
-    "HttpMethod": "GET",
+    "Method": "Skip",
+    "RelativePath": "api/Games/Skip",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TogrulAPI.Controllers.GamesController",
+    "Method": "Start",
+    "RelativePath": "api/Games/Start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

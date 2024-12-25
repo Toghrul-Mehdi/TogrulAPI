@@ -8,7 +8,7 @@ namespace TogrulAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GamesController(IGameService _service,IMemoryCache _cache) : ControllerBase
+    public class GamesController(IGameService _service) : ControllerBase
     {    
 
         [HttpPost]
@@ -16,11 +16,17 @@ namespace TogrulAPI.Controllers
         {
             return Ok(await _service.CreateAsync(dto));
         }
-        [HttpGet("Start/{id}")]
+        [HttpPost("[action]")]
 
         public async Task<IActionResult> Start(Guid id)
         {
             return Ok(await _service.Start(id));
+        }
+        [HttpPost("[action]")]
+
+        public async Task<IActionResult> Skip(Guid id)
+        {
+            return Ok(await _service.Skip(id));
         }
     }
 }

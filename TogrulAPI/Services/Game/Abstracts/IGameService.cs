@@ -9,7 +9,7 @@ namespace TogrulAPI.Services.Game.Abstracts
         Task<WordForGameDto> Start(Guid id);
         Task Fail (Guid id);
         Task Success(Guid id);
-        Task Skip (Guid id);
+        Task<WordForGameDto> Skip (Guid id);
         Task End(Guid id);
     }
 }

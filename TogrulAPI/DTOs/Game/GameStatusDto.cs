@@ -9,5 +9,6 @@ namespace TogrulAPI.DTOs.Game
         public byte Skip { get; set; }
         public Stack<WordForGameDto> Words { get; set; }
         public IEnumerable<int> UsedWordIds { get; set; }
+        public int MaxSkipCount { get; set; }
     }
 }
