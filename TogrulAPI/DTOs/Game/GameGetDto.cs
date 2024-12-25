@@ -8,5 +8,6 @@
         public int Time { get; set; }
         public string LanguageCode { get; set; }
         public List<string> Words { get; set; }
+        public List<string> BannedWords { get; set; }
     }
 }

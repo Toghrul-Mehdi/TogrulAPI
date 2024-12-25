@@ -18,14 +18,19 @@ namespace TogrulAPI.Services.Word.Implements
             {
                 throw new WordExistException();
             }
-            if (!await _context.Words.AnyAsync(x =>x.LanguageCode == dto.LanguageCode))
+            if (!await _context.Languages.AnyAsync(x =>x.Code == dto.LanguageCode))
             {
                 throw new WordNotExistLanguage();
             }
             await _context.AddAsync(new Entities.Word
             {
                 Text = dto.Text,
-                LanguageCode = dto.LanguageCode
+                LanguageCode = dto.LanguageCode,
+                BannedWords =dto.BannedWords.Select(x=> new Entities.BannedWord
+                {
+                    Text=x
+                }).ToList()
+                
             });
             await _context.SaveChangesAsync();
         }

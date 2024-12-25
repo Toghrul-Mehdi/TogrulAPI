@@ -15,21 +15,19 @@ namespace TogrulAPI.Controllers
         {
             return Ok(await _service.GetAllAsync());
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(BannedWordCreateDto dto)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Search(int id)
         {
             try
             {
-                await _service.CreateAsync(dto);
-                return Ok(dto);
+                return Ok(await _service.GetByIdAsync(id));
             }
             catch (Exception ex)
             {
-
-                if(ex is IBaseException bEx)
+                if (ex is IBaseException bEx)
                 {
                     return StatusCode(bEx.StatusCode, new
+
                     {
                         Message = bEx.ErrorMessage
                     });
@@ -40,16 +38,17 @@ namespace TogrulAPI.Controllers
                 }
             }
         }
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Search(int id)
+       /* [HttpPost]
+        public async Task<IActionResult> Create(BannedWordCreateDto dto)
         {
             try
             {
-                return Ok(await _service.GetByIdAsync(id));
+                await _service.CreateAsync(dto);
+                return Ok(dto);
             }
             catch (Exception ex)
             {
+
                 if (ex is IBaseException bEx)
                 {
                     return StatusCode(bEx.StatusCode, new
@@ -63,6 +62,9 @@ namespace TogrulAPI.Controllers
                 }
             }
         }
+
+
+       
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id , BannedWordUpdateDto dto)
@@ -84,7 +86,7 @@ namespace TogrulAPI.Controllers
             {
                 return BadRequest();
             }
-        }
+        }*/
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)

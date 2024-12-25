@@ -12,6 +12,7 @@
         public int? FailureAnswer { get; set; }
         public string LanguageCode { get; set; }
         public Language Language { get; set; }
+        
 
     }
 }

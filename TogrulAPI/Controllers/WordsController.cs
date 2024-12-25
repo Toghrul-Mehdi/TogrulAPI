@@ -40,7 +40,15 @@ namespace TogrulAPI.Controllers
                 }
             }
         }
-
+        [HttpPost("AddRange")]
+        public async Task<IActionResult> PostMany(IEnumerable<WordCreateDto> dto)
+        {
+            foreach (var item in dto)
+            {
+                await _service.CreateAsync(item);
+            }
+            return Ok();
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Search(int id)

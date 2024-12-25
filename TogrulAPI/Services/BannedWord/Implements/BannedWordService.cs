@@ -21,6 +21,15 @@ namespace TogrulAPI.Services.BannedWord.Implements
             }).ToListAsync();
         }
 
+        public async Task DeleteAsync(int id)
+        {
+            var data = await _context.BannedWords.FirstOrDefaultAsync(x => x.Id==id);
+            if (data != null)
+            {
+                _context.BannedWords.Remove(data);
+                await _context.SaveChangesAsync();
+            }
+        }
         public async Task CreateAsync(BannedWordCreateDto dto)
         {
             if(await _context.BannedWords.AnyAsync(x => x.Text == dto.Text))
@@ -74,14 +83,5 @@ namespace TogrulAPI.Services.BannedWord.Implements
             return rowsAffected > 0;
         }
 
-        public async Task DeleteAsync(int id)
-        {
-            var data = await _context.BannedWords.FirstOrDefaultAsync(x => x.Id==id);
-            if (data != null)
-            {
-                _context.BannedWords.Remove(data);
-                await _context.SaveChangesAsync();
-            }
-        }
     }
 }
