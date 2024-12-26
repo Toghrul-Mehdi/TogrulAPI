@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabu Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabu Oyunu</h1>
+
+        <section class="section">
+            <h2>Oyun Haqqında</h2>
+            <p>Tabu, söz təxmin etmə üzərinə qurulmuş əyləncəli bir partiya oyunudur. Oyunçular, müəyyən sözləri istifadə etmədən, komanda yoldaşlarına o sözü izah etməyə çalışır. Amma diqqət! Tabu sözləri istifadə etmək qadağandır!</p>
+        </section>
+
+        <section class="section">
+            <h2>Oyun Materialları</h2>
+            <ul>
+                <li><strong>Tabu Kartları:</strong> Hər kartda bir əsas söz və 6 tabu sözü.</li>
+                <li><strong>Zamanlayıcı:</strong> Qum saatı və ya telefon.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Oyun Qaydaları</h2>
+            <ol>
+                <li><strong>Komanda Yaratma:</strong> Oyunçular iki komandaya ayrılır.</li>
+                <li><strong>Növbə Müəyyənləşdirmə:</strong> Komandalardan biri sırayla sözləri təxmin etməyə çalışarkən, digər komanda izahçı olur.</li>
+                <li><strong>Söz Seçimi:</strong> İzahçı, bir tabu kartı alır və üstdəki əsas sözü komandasına izah etməyə çalışır.</li>
+                <li><strong>Tabu Sözləri:</strong> İzahçı, kartdakı tabu sözlərini istifadə edə bilməz. Əgər istifadə edərsə, komanda xal itirir.</li>
+                <li><strong>Zaman Məhdudiyyəti:</strong> İzahçı, müəyyən edilmiş müddət ərzində mümkün qədər çox söz təxmin etdirməyə çalışır.</li>
+                <li><strong>Xal Qeydiyyatı:</strong> Hər düzgün təxmin üçün 1 xal qazanılır. Müddət bitdikdə, izahçı növbəti sözə keçir.</li>
+                <li><strong>Oyun Sonu:</strong> Bütün kartlar istifadə edildikdə və ya müəyyən edilmiş müddət bitdikdə oyun sona çatır. Ən çox xal toplayan komanda qalib gəlir.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>İpuçları</h2>
+            <ul>
+                <li>İzah edərkən, sözün mənasını və ya istifadəsini açıqlamaqdan qaçın.</li>
+                <li>Komanda yoldaşlarınızın maraq sahələrini düşünərək ipucları verin.</li>
+                <li>Sürətli düşünün və sözləri yadda saxlayın!</li>
+            </ul>
+        </section> 
+        <div class="start-button-container">
+            <a asp-action="Index" asp-controller="Tabu" class="start-button">Başla</a>
+        </div>
+    </div>
+</body>
+</html>

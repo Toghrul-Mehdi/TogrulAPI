@@ -20,32 +20,66 @@ namespace TogrulAPI.Controllers
 
         public async Task<IActionResult> Start(Guid id)
         {
-            return Ok(await _service.Start(id));
+            try
+            {
+                return Ok(await _service.Start(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bele bir oyun tapilmadi");
+            }
         }
         [HttpPost("[action]")]
 
         public async Task<IActionResult> Skip(Guid id)
         {
-            return Ok(await _service.Skip(id));
+            try
+            {
+                return Ok(await _service.Skip(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bele bir oyun tapilmadi");
+            }
         }
         [HttpPost("[action]")]
 
         public async Task<IActionResult> Success(Guid id)
         {
-            return Ok(await _service.Success(id));
+            try
+            {
+                return Ok(await _service.Success(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bele bir oyun tapilmadi");
+            }
         }
         [HttpPost("[action]")]
 
         public async Task<IActionResult> Fail(Guid id)
         {
-            return Ok(await _service.Fail(id));
+            try
+            {
+                return Ok(await _service.Fail(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bele bir oyun tapilmadi");
+            }
         }
         [HttpPost("[action]")]
 
         public async Task<IActionResult> End(Guid id)
         {
-            return Ok(await _service.End(id));
-            
+            try
+            {
+                return Ok(await _service.End(id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bele bir oyun tapilmadi");
+            }
         }
     }
 }

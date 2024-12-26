@@ -35,12 +35,20 @@ namespace TogrulAPI.Services.Game.Implements
         public async Task<WordForGameDto> Fail(Guid id)
         {
             var status = _getCurrentGame(id);
-            var currentWord = status.Words.Pop();
-            status.Fail++;
-            status.Score -= 10;
-            _cache.Set(id, status, TimeSpan.FromSeconds(300));
-            Console.WriteLine("Fail:"+status.Fail);
-            return currentWord;
+            if (status.Skip < status.MaxSkipCount)
+            {
+                var currentWord = status.Words.Pop();
+                status.Fail++;
+                status.Score -= 10;
+                _cache.Set(id, status, TimeSpan.FromSeconds(300));
+                Console.WriteLine("Fail:" + status.Fail);
+                return currentWord;
+            }
+            else
+            {
+                return null;
+            }
+           
         }
 
         public async Task<WordForGameDto> Skip(Guid id)
@@ -89,12 +97,19 @@ namespace TogrulAPI.Services.Game.Implements
         public async Task<WordForGameDto> Success(Guid id)
         {
             var status = _getCurrentGame(id);
-            var currentWord = status.Words.Pop();
-            status.Success++;
-            status.Score += 20;
-            _cache.Set(id, status, TimeSpan.FromSeconds(300));
-            Console.WriteLine("Success:"+status.Success);
-            return currentWord;
+            if(status.Skip < status.MaxSkipCount)
+            {
+                var currentWord = status.Words.Pop();
+                status.Success++;
+                status.Score += 20;
+                _cache.Set(id, status, TimeSpan.FromSeconds(300));
+                Console.WriteLine("Success:" + status.Success);
+                return currentWord;
+            }
+            else
+            {
+                return null;
+            }
         }
         GameStatusDto _getCurrentGame(Guid id)
         {
