@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TabuWebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bfc2cbac6b7e9634607d8c30d5469287dc475e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72cfc34cc3b6742f55f19521042e148f4a1eef03")]
 [assembly: System.Reflection.AssemblyProductAttribute("TabuWebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TabuWebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using TogrulAPI.DAL;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddHttpClient("TogrulAPI", client =>
-{
-    client.BaseAddress = new Uri("http://localhost:5173");
-    client.DefaultRequestHeaders.Add("Accept", "application/json");
-});
+
 
 var app = builder.Build();
 
-
+builder.Services.AddDbContext<TogrulDB>(s => s.UseSqlServer(builder.Configuration.GetConnectionString("Mssql")));
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -1,0 +1,88 @@
+﻿@model TogrulAPI.DTOs.Game.GameCreateDto
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabu</title>
+    <style>
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="number"],
+        select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            width: 100%; 
+        }
+
+            input[type="number"]:focus,
+            select:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 0 5px rgba(0,123,255,.25);
+            }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Oyun Yarat</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="bannedWordCount" asp-for="BannedWordCount">Yasaklı Kelime Sayısı:</label>
+            <input type="number" id="bannedWordCount" asp-for="BannedWordCount" name="bannedWordCount" required min="0">
+
+            <label for="failCount" asp-for="FailCount">Başarısız Sayısı:</label>
+            <input type="number" id="failCount" asp-for="FailCount" name="failCount" required min="0">
+
+            <label for="skipCount" asp-for="SkipCount">Atlanan Sayısı:</label>
+            <input type="number" id="skipCount" asp-for="SkipCount" name="skipCount" required min="0">
+
+            <label for="time" asp-for="Time">Süre (saniye):</label>
+            <input type="number" id="time" asp-for="Time" name="time" required min="0">
+
+            <label for="languageCode" asp-for="LanguageCode">Dil Kodu:</label>
+            <select id="languageCode" asp-for="LanguageCode" name="languageCode" required>   
+                @foreach (var item in ViewBag.Language)
+                {
+                    @if (item != null)
+                    {                        
+                        <option value="@item.Code">@item.LanguageName</option>
+                    }                    
+                }
+               
+            </select>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
